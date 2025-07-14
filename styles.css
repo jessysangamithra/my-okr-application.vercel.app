@@ -1,0 +1,106 @@
+/* Custom Styles for ABEX Group Landing Page */
+
+/* Google Fonts fallback */
+body, .font-poppins {
+  font-family: 'Poppins', 'Inter', Arial, sans-serif;
+}
+
+/* Gradient text utility */
+.text-gradient {
+  background: linear-gradient(90deg, #2563eb, #a21caf, #ec4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Navbar shadow on scroll */
+#navbar.scrolled {
+  box-shadow: 0 4px 24px 0 rgba(37, 99, 235, 0.08);
+  background: rgba(255,255,255,0.95);
+}
+
+/* Service and Why Choose Us Cards */
+.service-card, .why-card {
+  background: rgba(255,255,255,0.15);
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 24px 0 rgba(37, 99, 235, 0.08);
+  padding: 2rem 1.5rem;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+  cursor: pointer;
+}
+.service-card:hover, .why-card:hover {
+  transform: scale(1.05) translateY(-4px);
+  box-shadow: 0 8px 32px 0 rgba(236, 72, 153, 0.15);
+  background: linear-gradient(120deg, #fff 60%, #f3e8ff 100%);
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  margin: 0 auto;
+  box-shadow: 0 2px 12px 0 rgba(37, 99, 235, 0.08);
+  font-size: 2rem;
+  transition: background 0.3s, color 0.3s;
+}
+
+/* Animations (for hero, form, etc.) */
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(40px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.animate-fadeInUp {
+  animation: fadeInUp 1s cubic-bezier(0.23, 1, 0.32, 1) both;
+}
+@keyframes bounceIn {
+  0% { opacity: 0; transform: scale(0.8); }
+  60% { opacity: 1; transform: scale(1.05); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.animate-bounceIn {
+  animation: bounceIn 1s 0.2s both;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .service-card, .why-card {
+    padding: 1.5rem 1rem;
+  }
+  .icon-box {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+  }
+}
+
+/* Lottie illustration placeholder (hide if not loaded) */
+.lottie-hero {
+  background: #fff3;
+  border-radius: 2rem;
+  box-shadow: 0 4px 24px 0 rgba(37, 99, 235, 0.08);
+}
+
+/* Hide scrollbars for a cleaner look */
+body::-webkit-scrollbar {
+  width: 8px;
+  background: #f3f4f6;
+}
+body::-webkit-scrollbar-thumb {
+  background: linear-gradient(120deg, #2563eb 0%, #ec4899 100%);
+  border-radius: 4px;
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+  transition: max-height 0.3s cubic-bezier(0.23, 1, 0.32, 1);
+  overflow: hidden;
+}
+
+/* Form message */
+#formMessage {
+  min-height: 1.5em;
+} 

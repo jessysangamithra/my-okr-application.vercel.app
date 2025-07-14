@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OKR Group - Innovating Tomorrow</title>
+  <!-- Google Fonts: Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <!-- AOS.js CDN -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="font-poppins bg-white text-gray-900 scroll-smooth">
+  <!-- Header/Navbar -->
+  <header id="navbar" class="fixed w-full z-50 bg-white/80 backdrop-blur shadow transition-all">
+    <nav class="container mx-auto flex items-center justify-between py-4 px-6">
+      <div class="flex items-center gap-2">
+        <span class="text-2xl font-bold text-gradient">OKR Group</span>
+      </div>
+      <ul class="hidden md:flex gap-8 font-semibold text-lg">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#why" class="nav-link">Why Choose Us</a></li>
+        <li><a href="#register" class="nav-link">Register</a></li>
+      </ul>
+      <button id="menu-btn" class="md:hidden text-2xl"><i class="fas fa-bars"></i></button>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg absolute w-full left-0 top-full">
+      <ul class="flex flex-col gap-4 p-6">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#services" class="nav-link">Services</a></li>
+        <li><a href="#why" class="nav-link">Why Choose Us</a></li>
+        <li><a href="#register" class="nav-link">Register</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="pt-32 pb-20 bg-gradient-to-br from-blue-600 via-purple-500 to-pink-400 text-white relative overflow-hidden">
+    <div class="container mx-auto flex flex-col md:flex-row items-center justify-between gap-10 px-6">
+      <div class="flex-1" data-aos="fade-right">
+        <h1 class="text-4xl md:text-6xl font-bold mb-4 animate-fadeInUp">Innovating Tomorrow</h1>
+        <p class="text-xl md:text-2xl mb-8 animate-fadeInUp delay-100">Smart tech solutions for a smarter world</p>
+        <a href="#register" class="inline-block px-8 py-3 bg-white text-blue-700 font-semibold rounded-full shadow-lg transition-transform transform hover:scale-105 hover:bg-gradient-to-r hover:from-pink-400 hover:to-blue-600 hover:text-white animate-bounceIn" data-aos="zoom-in" data-aos-delay="200">Get Started</a>
+      </div>
+      <div class="flex-1 flex justify-center" data-aos="fade-left">
+        <!-- Animated Lottie Illustration -->
+        <lottie-player src="https://assets10.lottiefiles.com/packages/lf20_kyu7xb1v.json" background="transparent" speed="1" style="width: 320px; height: 320px;" loop autoplay></lottie-player>
+      </div>
+    </div>
+    <!-- Decorative SVGs -->
+    <svg class="absolute top-0 left-0 w-64 h-64 opacity-20" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <circle fill="#fff" cx="100" cy="100" r="100"/>
+    </svg>
+    <svg class="absolute bottom-0 right-0 w-64 h-64 opacity-20" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+      <rect fill="#fff" width="200" height="200" rx="100"/>
+    </svg>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="py-20 bg-white">
+    <div class="container mx-auto px-6 text-center max-w-3xl" data-aos="fade-up">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gradient">About OKR Group</h2>
+      <p class="text-lg text-gray-700">OKR Group is a forward-thinking tech company dedicated to delivering innovative, scalable, and secure technology solutions. Our passionate team leverages the latest advancements in AI, cloud, and SaaS to empower businesses and shape a smarter, more connected world.</p>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="py-20 bg-gradient-to-br from-pink-400 via-blue-500 to-purple-600 text-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center" data-aos="fade-up">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="service-card" data-aos="zoom-in">
+          <div class="icon-box bg-white text-blue-600"><i class="fas fa-cloud fa-2x"></i></div>
+          <h3 class="font-semibold text-xl mt-4 mb-2">Cloud Solutions</h3>
+          <p>Secure, scalable, and cost-effective cloud infrastructure for your business.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="100">
+          <div class="icon-box bg-white text-purple-600"><i class="fas fa-robot fa-2x"></i></div>
+          <h3 class="font-semibold text-xl mt-4 mb-2">AI Consulting</h3>
+          <p>Unlock the power of AI to automate, analyze, and accelerate growth.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="200">
+          <div class="icon-box bg-white text-pink-500"><i class="fas fa-code fa-2x"></i></div>
+          <h3 class="font-semibold text-xl mt-4 mb-2">SaaS Development</h3>
+          <p>Custom SaaS platforms tailored to your unique business needs.</p>
+        </div>
+        <div class="service-card" data-aos="zoom-in" data-aos-delay="300">
+          <div class="icon-box bg-white text-green-500"><i class="fas fa-lightbulb fa-2x"></i></div>
+          <h3 class="font-semibold text-xl mt-4 mb-2">IT Strategy</h3>
+          <p>Expert guidance to align your IT with your business goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section id="why" class="py-20 bg-white">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-10 text-center text-gradient" data-aos="fade-up">Why Choose Us</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+        <div class="why-card" data-aos="fade-up">
+          <div class="icon-box bg-blue-100 text-blue-600"><i class="fas fa-headset fa-2x"></i></div>
+          <h3 class="font-semibold text-lg mt-4 mb-2">24/7 Support</h3>
+          <p>Always here to help, whenever you need us.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="icon-box bg-purple-100 text-purple-600"><i class="fas fa-users fa-2x"></i></div>
+          <h3 class="font-semibold text-lg mt-4 mb-2">Innovative Team</h3>
+          <p>Creative minds driving cutting-edge solutions.</p>
+        </div>
+        <div class="why-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="icon-box bg-pink-100 text-pink-500"><i class="fas fa-layer-group fa-2x"></i></div>
+          <h3 class="font-semibold text-lg mt-4 mb-2">Scalable Solutions</h3>
+          <p>Grow your business with confidence and flexibility.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Registration Form Section -->
+  <section id="register" class="py-20 bg-gradient-to-br from-blue-600 via-purple-500 to-pink-400 text-white">
+    <div class="container mx-auto px-6 max-w-lg" data-aos="zoom-in">
+      <h2 class="text-3xl md:text-4xl font-bold mb-6 text-center">Register</h2>
+      <form id="registrationForm" class="bg-white/90 rounded-xl shadow-lg p-8 text-gray-900 animate-fadeInUp">
+        <div class="mb-4">
+          <label for="fullName" class="block font-semibold mb-2">Full Name</label>
+          <input type="text" id="fullName" name="fullName" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-500" required />
+        </div>
+        <div class="mb-4">
+          <label for="email" class="block font-semibold mb-2">Email</label>
+          <input type="email" id="email" name="email" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-purple-500" required />
+        </div>
+        <div class="mb-4">
+          <label for="password" class="block font-semibold mb-2">Password</label>
+          <input type="password" id="password" name="password" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-pink-400" required />
+        </div>
+        <div class="mb-6">
+          <label for="confirmPassword" class="block font-semibold mb-2">Confirm Password</label>
+          <input type="password" id="confirmPassword" name="confirmPassword" class="w-full px-4 py-2 rounded-lg border focus:outline-none focus:ring-2 focus:ring-blue-600" required />
+        </div>
+        <button type="submit" class="w-full py-3 rounded-lg bg-gradient-to-r from-pink-400 to-blue-600 text-white font-bold text-lg shadow-lg transition-transform transform hover:scale-105 hover:shadow-2xl">Register</button>
+        <p id="formMessage" class="mt-4 text-center text-red-500 hidden"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-8 bg-gray-900 text-white">
+    <div class="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <div class="flex items-center gap-4">
+        <a href="https://linkedin.com" target="_blank" class="hover:text-blue-400"><i class="fab fa-linkedin fa-lg"></i></a>
+        <a href="https://twitter.com" target="_blank" class="hover:text-blue-300"><i class="fab fa-twitter fa-lg"></i></a>
+        <a href="https://github.com" target="_blank" class="hover:text-gray-400"><i class="fab fa-github fa-lg"></i></a>
+      </div>
+      <div class="flex gap-6">
+        <a href="#" class="hover:underline">Privacy Policy</a>
+        <a href="#" class="hover:underline">Terms</a>
+        <a href="#contact" class="hover:underline">Contact</a>
+      </div>
+      <div class="text-center md:text-right">Made with <span class="text-pink-400">&#10084;&#65039;</span> by ABEX Group</div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <script src="script.js"></script>
+</body>
+</html> 
